@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+    font-family:cursive;
+    font-size: 2.4rem;
+    font-weight: 550;
+    text-align: center;
+    align-content: center;
+    padding-top: 5rem;
+
+
+}
+
+body{
+    height:100vh;
+    background: url(https://img.freepik.com/free-photo/minimal-work-space-creative-flat-lay-photo-workspace-desk-with-sketchbook-wooden-pencil-copy-space-white-background-top-view-flat-lay-photography_1253-994.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size:cover ;
+   background-position: center;
+}
+  
+
+.container{
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.addtask{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.addtask > input[type="text"]{
+    width: 90%;
+    color: #0c0c0c;
+    border: none;
+    border-bottom: 2px solid #272626b7;
+    background: none;
+    padding: 10px;
+    font-size: 23px;
+    outline: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.addtask button{
+    margin: 0 11px;
+    background-color: black;
+    color: rgb(241, 238, 233);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.incomplete, .complete{
+    margin: 5px 0;
+    padding: 20px;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    list-style: none;
+    counter-reset: my-counter;
+    
+}
+
+ol li{
+    list-style: none;
+    width: 100%;
+    padding: 18px;
+    margin: 5px;
+    background-color:#fc68683b ;
+    font-size: 22px;
+    counter-increment: my-counter;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+ol.complete li{
+    background-color:#34c03b54 ;
+}
+
+ol li::before{
+    content: counter(my-counter);
+    background-color: black;
+    color: aliceblue;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 0.5rem;
+
+}
+
+li button{
+    float: right;
+    padding: 5px;
+    font-size:28px;
+    line-height:28px ;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
